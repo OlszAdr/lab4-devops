@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: olszadr/lab4-devops
 
 jobs:
   # ETAP 1: TESTY AUTOMATYCZNE
