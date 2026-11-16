@@ -6,7 +6,7 @@ app = FastAPI(title="DevOps Demo App")
 
 REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
 REDIS_PORT = int(os.getenv("REDIS_PORT", 6379))
-APP_VERSION = os.getenv("APP_VERSION", "1.0.0")
+APP_VERSION = os.getenv("APP_VERSION", "1.0.1")
 ENVIRONMENT = os.getenv("ENVIRONMENT", "development")
 
 def get_redis():
