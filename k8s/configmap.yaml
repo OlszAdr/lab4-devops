@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: devops-app-config
+data:
+  APP_VERSION: "1.1.0-k8s"
+  ENVIRONMENT: "kubernetes-production"
+  REDIS_HOST: "localhost"
+  REDIS_PORT: "6379"

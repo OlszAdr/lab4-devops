@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: devops_web_app
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - APP_VERSION=1.0.0
+      - ENVIRONMENT=docker-compose-staging
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7-alpine
+    container_name: devops_redis
+    ports:
+      - "6379:6379"
